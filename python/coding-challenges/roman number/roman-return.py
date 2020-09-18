@@ -14,17 +14,17 @@ while True:
         L1 = {"0":"","1":"I", "2":"II", "3":"III", "4":"IV", "5":"V", "6":"VI", "7":"VII", "8":"VIII", "9":"IX"}
         
         def conv(num):
-            if len(number)==4:
-                roman = int(number[0])*"M" + L100[number[1]] + L10[number[2]] + L1[number[3]]
+            if len(num)==4:
+                roman = int(num[0])*"M" + L100[num[1]] + L10[num[2]] + L1[num[3]]
                  
             elif len(number)==3:
-                roman = L100[number[0]] + L10[number[1]] + L1[number[2]]
+                roman = L100[num[0]] + L10[num[1]] + L1[num[2]]
                 
             elif len(number)==2:
-                roman = L10[number[0]] + L1[number[1]]
+                roman = L10[num[0]] + L1[num[1]]
                 
             else :
-                roman = L1[number[0]]
+                roman = L1[num[0]]
             return roman
         print(conv(number))
         
