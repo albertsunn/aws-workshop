@@ -17,10 +17,10 @@ while True:
             if len(num)==4:
                 roman = int(num[0])*"M" + L100[num[1]] + L10[num[2]] + L1[num[3]]
                  
-            elif len(number)==3:
+            elif len(num)==3:
                 roman = L100[num[0]] + L10[num[1]] + L1[num[2]]
                 
-            elif len(number)==2:
+            elif len(num)==2:
                 roman = L10[num[0]] + L1[num[1]]
                 
             else :
