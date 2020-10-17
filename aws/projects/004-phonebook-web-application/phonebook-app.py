@@ -43,7 +43,7 @@ def init_phonebook_db():
     cursor.execute(drop_table)
     cursor.execute(phonebook_table)
     cursor.execute(data)
-
+init_phonebook_db():
 # Write a function named `find_persons` which finds persons' record using the keyword from the phonebook table in the db,
 # and returns result as list of dictionary 
 # `[{'id': 1, 'name':'XXXX', 'number': 'XXXXXX'}]`.
@@ -190,6 +190,6 @@ def delete_record():
 
 # Add a statement to run the Flask application which can be reached from any host on port 80.
 if __name__== '__main__':
-    init_phonebook_db()
+    #init_phonebook_db()
     #app.run(debug=True)
     app.run(host='0.0.0.0', port=80) 
